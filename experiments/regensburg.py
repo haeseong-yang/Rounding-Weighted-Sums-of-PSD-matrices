@@ -1,11 +1,5 @@
 """
 Regensburg Pediatric Appendicitis Experiment
-
-We restrict to D-optimal design for two reasons:
-  1. The benchmark study (Ponte et al., 2025) considers only D-optimal
-     on this dataset, allowing direct comparison.
-  2. E-optimal on this dataset suffers from poor numerical feasibility
-     due to strong correlation among clinical features.
 """
 from core.data_loaders import load_regensburg
 from core.runner import run_experiment
@@ -14,7 +8,7 @@ from core.runner import run_experiment
 # [Configuration]
 # ========================================================
 DES_TYPE = 'D'
-K_GRID   = range(30, 65, 5)
+K_GRID   = range(30, 46, 1)
 # ========================================================
 
 
